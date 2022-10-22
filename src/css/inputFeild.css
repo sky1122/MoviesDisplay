@@ -1,0 +1,83 @@
+.search {
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+.input-search {
+    display:flex;
+    width: 60%;
+    position: relative;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.select {
+    width: 59%;
+    margin: 30px;
+    font-size: 30px;
+    
+}
+.form-select {
+    border-radius: 50px;
+}
+.input_box {
+    width: 100%;
+    border-radius: 50px;
+    padding: 20px 30px;
+    font-size: 25px;
+    border: none;
+    transition: 0.2s;
+    box-shadow: inset 0 0 5px black;
+}
+
+.input_box:focus {
+    box-shadow: 0 0 10px 1000px rgba(0, 0, 0, 0.5);
+    outline: none;
+}
+
+.input_submit {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    margin: 1px 5px 4px 10px;
+    border-radius: 50px;
+    right: 0px;
+    border: none;
+    font-size: 15px;
+    background-color:cadetblue;
+    color: white;
+    transition: 0.2s all;
+    box-shadow: 0 0 5px black;
+}
+
+.input_submit:active {
+    transform: scale(0.8);
+    box-shadow: 0 0 2px black;
+}
+
+
+/* .select-list {
+    width: 200px;
+    height: 70px;
+    font-size: 30px;
+    border-radius: 20px;
+    align-items: center;
+} */
+
+/* .checkbox {
+    font-size: 50px;
+    color: aliceblue;
+} */
+
+.movie-list-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    border: 4px;
+    width: 50%;
+
+}
+
+.form-check .form-check-label {
+    font-size: 30px;
+}

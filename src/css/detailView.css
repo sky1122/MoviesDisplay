@@ -1,0 +1,27 @@
+.card{
+    width: 30rem;
+    align-items: center;
+    margin: 0 auto; /* Added */
+    float: none; /* Added */
+    margin-bottom: 10px; /* Added */
+}
+
+.card-warp {
+    align-items: center;
+    display:flex;
+    justify-content: space-between;
+}
+
+.card-text {
+    font-size: 25px;
+}
+
+.prev {
+    font-size: 60px;
+    margin-left: 300px;
+}
+
+.next {
+    font-size: 60px;
+    margin-right: 300px;
+}

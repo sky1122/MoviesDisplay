@@ -1,0 +1,30 @@
+.movieList_single {
+    width:100%;
+    margin: 1rem;
+    background-color: aliceblue;
+    border-radius: 3px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+    /* overflow: hidden; */
+    display: flex;
+}
+
+.movieList_single img {
+    max-width: 250px;
+}
+
+.movie-card-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.movie-info {
+    width: 100%;
+    /* display: flex; */
+    justify-content: space-between; 
+    align-items: center;
+    padding: 1.5rem;
+    font-size: 30px;
+}
+.movie-info h3 {
+    margin: 20px;
+}

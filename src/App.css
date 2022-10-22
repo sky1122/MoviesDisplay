@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Neucha&display=swap');
+
+.App {
+  background-color: cadetblue;
+  font-family: "Neucha", cursive;
+  width: 100%;
+  height: 100%;
+  /* align-items: center; */
+
+}
+.header{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+/* Change the bXXX of the <tag> element to 
+"XXX" when the browser window is 800px wide or less: */
+
+@media (max-width: 800px) {
+  .heading {
+    margin: 15px 0;
+    font-size: 35px;
+  }
+}
