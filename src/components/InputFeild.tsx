@@ -12,15 +12,7 @@ import "../css/bootstrap.min.css";
 //   // handleSearch:() => ReturnType;
 // }
 
-type OptionType = {
-  value: string;
-  label: string;
-};
-const options: OptionType[] = [
-  { value: "chocolate", label: "Chocolate" },
-  { value: "strawberry", label: "Strawberry" },
-  { value: "vanilla", label: "Vanilla" }
-];
+
 const SEARCH_API = "https://api.themoviedb.org/3/search/movie?api_key=230f31c8aa52db32d37d5f529e633641&query=";
 
 const InputFeild = () => {
@@ -105,7 +97,7 @@ const InputFeild = () => {
         getFakeIdMap.set(movie.id, count);
         count += 1;
     }) : null;
-
+    console.log(temp);
   return (
     <div className='search'>
       <form className='input-search' onSubmit={handleOnSumbit}>

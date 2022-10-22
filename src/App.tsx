@@ -1,9 +1,8 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import './App.css';
 import './css/movie.css';
 
-import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
-import MovieList from './components/MovieList';
+import {Routes, Route} from "react-router-dom";
 import HeaderWrap from './components/HeaderWrap';
 import MovieCardWrap from './components/MovieCardWrap';
 import InputFeild from './components/InputFeild';

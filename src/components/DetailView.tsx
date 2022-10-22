@@ -6,7 +6,6 @@ import { useParams, useLocation, Link } from 'react-router-dom'
 import { IMovie } from '../models/movis';
 
 const IMG_API = "https://image.tmdb.org/t/p/w500";
-const FEATURED_API = "https://api.themoviedb.org/3/discover/movie?sort_by=popularity.desc&api_key=230f31c8aa52db32d37d5f529e633641&page=1";
 const DetailView = () => {
     const params = useParams();
 
@@ -30,7 +29,7 @@ const DetailView = () => {
             console.log("eerror");
             console.log(e.message);
         });
-    }, [params.movieId]);
+    }, [singleMovieUrl, params.movieId]);
 
     let pagePrev = (Number(params.movieId) - 1) < 0 ? map.size - 1 : Number(params.movieId) - 1;
     let pageNext = (Number(params.movieId) + 1) >= map.size ? 0 : Number(params.movieId) + 1;
