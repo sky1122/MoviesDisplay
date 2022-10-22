@@ -4,7 +4,6 @@ import axios from 'axios';
 import MovieCard from '../components/MovieCard';
 import '../css/movie.css';
 import FilterMovieButtons from './FilterMovieButtons';
-import { Link } from 'react-router-dom';
 
 const FEATURED_API = "https://api.themoviedb.org/3/discover/movie?sort_by=popularity.desc&api_key=230f31c8aa52db32d37d5f529e633641&page=1";
 
@@ -36,11 +35,14 @@ const MovieCardWrap = () => {
     let getFakeIdMap = new Map<number, number>();
     let count = 0;
 
-    let temp = movies ? movies.forEach((movie) => {
+    let finalMap =  movies ? movies.forEach((movie) => {
         moviesMap.set(count, movie.id);
         getFakeIdMap.set(movie.id, count);
         count += 1;
+        return moviesMap;
     }) : null;
+
+    console.log(typeof finalMap);
 
     return (
         <div className='movie-card-list'>

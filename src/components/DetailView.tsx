@@ -1,5 +1,5 @@
 import axios, { AxiosError } from 'axios';
-import React, { useEffect, useState, useRef } from 'react'
+import React, { useEffect, useState } from 'react'
 import "../css/bootstrap.min.css";
 import "../css/detailView.css";
 import { useParams, useLocation, Link } from 'react-router-dom'

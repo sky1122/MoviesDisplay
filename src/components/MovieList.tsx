@@ -1,5 +1,4 @@
 import React from 'react'
-import { IMovie } from '../models/movis'
 import "../css/movieList.css";
 import { Link } from 'react-router-dom';
 import { AppProps } from '../components/MovieCard';

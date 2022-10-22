@@ -1,5 +1,5 @@
 import axios from 'axios';
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import "../css/inputFeild.css";
 import { IMovie } from '../models/movis';
 import MovieList from './MovieList';
