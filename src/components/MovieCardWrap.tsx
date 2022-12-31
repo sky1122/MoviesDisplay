@@ -48,9 +48,8 @@ const MovieCardWrap = () => {
             <div className='movie-container'>
                 {movies ? movies.map((movie) => {
                     return (
-                        // <Link to={`/Gallery/${movie.id}`}>
                         <MovieCard movies={movie} map = {moviesMap} fakeId = {getFakeIdMap.get(movie.id)} key={movie.id}/>
-                        // {/* </Link> */}
+
                     );
                 }) : null}
             </div>
