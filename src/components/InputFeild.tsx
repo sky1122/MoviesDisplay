@@ -5,15 +5,9 @@ import { IMovie } from '../models/movis';
 import MovieList from './MovieList';
 import "../css/bootstrap.min.css";
 
-// interface Props {
-//   search: string;
-//   // check: string;
-//   setSearch: React.Dispatch<React.SetStateAction<string>>;
-//   // handleSearch:() => ReturnType;
-// }
 
 
-const SEARCH_API = "https://api.themoviedb.org/3/search/movie?api_key=230f31c8aa52db32d37d5f529e633641&query=";
+const SEARCH_API = "https://api.themoviedb.org/3/search/movie?api_key=";
 
 const InputFeild = () => {
   const [searchTerm, setSearchTerm] = useState<string>("");
@@ -31,12 +25,11 @@ const InputFeild = () => {
 
   }
 
-  // const [selectedOption, setSelectedOption] = useState<string>(() => ({key: "Param"}));
   const [selectedOption, setSelectedOption] = useState<string>();
   const [checkedOption, setcheckedOption] = useState<string>();
 
   const handleCheckChange = (event: { target: { value: string; }; }) => {
-    // event.preventDefault();
+
     let checkedOption: string = event.target.value;
     setcheckedOption(checkedOption);
     console.log("handleCheckChange selectedOption: " + selectedOption);
@@ -65,10 +58,6 @@ const InputFeild = () => {
     let selectedOption: string = event.target.value;
     setSelectedOption(selectedOption);
 
-    console.log("handleSelectChange selectedOption: " + selectedOption);
-    console.log("handleSelectChange checkedOption: " + checkedOption);
-    // console.log(selectedOption === "vote_average");
-    // console.log(checkedOption === "descending");
     if (selectedOption === "popularity") {
       if (checkedOption === "descending") {
         const desendSort = movies ? movies.sort((a, b) => b.popularity - a.popularity) : null;
@@ -97,7 +86,7 @@ const InputFeild = () => {
         getFakeIdMap.set(movie.id, count);
         count += 1;
     }) : null;
-    console.log(temp);
+    
   return (
     <div className='search'>
       <form className='input-search' onSubmit={handleOnSumbit}>
