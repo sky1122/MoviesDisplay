@@ -5,7 +5,7 @@ import MovieCard from '../components/MovieCard';
 import '../css/movie.css';
 import FilterMovieButtons from './FilterMovieButtons';
 
-const FEATURED_API = "https://api.themoviedb.org/3/discover/movie?sort_by=popularity.desc&api_key=230f31c8aa52db32d37d5f529e633641&page=1";
+const FEATURED_API = "https://api.themoviedb.org/3/discover/movie?sort_by=popularity.desc&api_key=";
 
 const MovieCardWrap = () => {
     const [movies, setMovies] = useState<IMovie[] | null>([]);
@@ -41,8 +41,6 @@ const MovieCardWrap = () => {
         count += 1;
         return moviesMap;
     }) : null;
-
-    console.log(typeof finalMap);
 
     return (
         <div className='movie-card-list'>
