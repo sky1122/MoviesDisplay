@@ -12,9 +12,9 @@ const DetailView = () => {
     const location = useLocation();
     const { map } = location.state;
 
-    const singleMovieUrl = `https://api.themoviedb.org/3/movie/${map.get(Number(params.movieId))}?api_key=230f31c8aa52db32d37d5f529e633641`;
+    const singleMovieUrl = `https://api.themoviedb.org/3/movie/${map.get(Number(params.movieId))}?api_key=`;
 
-    // console.log(singleMovieUrl);
+    
     const [movie, setMovie] = useState<IMovie>();
 
     useEffect(() => {
